@@ -1,5 +1,15 @@
+/*
+ * :file description:
+ * :name: /shuqin/app/layout.tsx
+ * :author:张德志
+ * :copyright: (c) 2024, Xiaozhi
+ * :date created: 2024-09-28 20:34:17
+ * :last editor: 张德志
+ * :date last edited: 2024-09-28 20:51:31
+ */
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import Header from "@/components/Header";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -28,6 +38,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Header />
         {children}
       </body>
     </html>
