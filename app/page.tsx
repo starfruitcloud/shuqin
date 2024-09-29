@@ -6,18 +6,14 @@
  * :copyright: (c) 2024, Xiaozhi
  * :date created: 2024-09-28 20:34:17
  * :last editor: 张德志
- * :date last edited: 2024-09-29 15:58:36
+ * :date last edited: 2024-09-29 19:53:10
  */
+"use client";
+import { useEffect } from "react";
 
-import { Button } from "@/components/ui/button";
-
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export default async function Home() {
-  // const baseUrl = "https://cnodejs.org/api/v1";
-  // const rsp = await fetch(`${baseUrl}/topics`).then((res) => res.json());
-  return (
-    <div>
-      <Button variant="ghost">按钮</Button>
-    </div>
-  );
+export default function Home() {
+  useEffect(() => {
+    window.location.href = "https://www.shuqin.cc";
+  }, []);
+  return <div />;
 }
