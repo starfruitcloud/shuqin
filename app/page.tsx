@@ -6,10 +6,10 @@
  * :copyright: (c) 2024, Xiaozhi
  * :date created: 2024-09-28 20:34:17
  * :last editor: 张德志
- * :date last edited: 2024-09-29 06:17:01
+ * :date last edited: 2024-09-29 15:58:36
  */
 
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default async function Home() {
@@ -17,7 +17,7 @@ export default async function Home() {
   // const rsp = await fetch(`${baseUrl}/topics`).then((res) => res.json());
   return (
     <div>
-      <Button type="primary">按钮</Button>
+      <Button variant="ghost">按钮</Button>
     </div>
   );
 }
