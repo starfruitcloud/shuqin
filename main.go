@@ -1,3 +1,4 @@
+
 package main
 
 import (
@@ -34,7 +35,7 @@ func main() {
 	r.GET("/solutions", handler.Solutions)
 
 	// 监听并在 0.0.0.0:8080 上启动服务
-	err = r.Run(":8002")
+	err = r.Run(":8082")
 	if err != nil {
 		panic(err)
 	}
