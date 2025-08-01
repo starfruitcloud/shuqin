@@ -28,6 +28,10 @@ func main() {
 
 	r.GET("/", handler.Home)
 	r.GET("/about", handler.About)
+	r.GET("/contact", handler.Contact)
+	r.GET("/product", handler.Product)
+	r.GET("customer", handler.Customer)
+	r.GET("/solutions", handler.Solutions)
 
 	// 监听并在 0.0.0.0:8080 上启动服务
 	err = r.Run(":8002")
