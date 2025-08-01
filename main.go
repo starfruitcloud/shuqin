@@ -30,7 +30,7 @@ func main() {
 	r.GET("/about", handler.About)
 	r.GET("/contact", handler.Contact)
 	r.GET("/product", handler.Product)
-	r.GET("customer", handler.Customer)
+	r.GET("/customer", handler.Customer)
 	r.GET("/solutions", handler.Solutions)
 
 	// 监听并在 0.0.0.0:8080 上启动服务
