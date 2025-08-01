@@ -26,7 +26,8 @@ func main() {
 
 	r.SetHTMLTemplate(tmpl)
 
-	r.GET("/", handler.HomePage)
+	r.GET("/", handler.Home)
+	r.GET("/about", handler.About)
 
 	// 监听并在 0.0.0.0:8080 上启动服务
 	err = r.Run(":8002")
