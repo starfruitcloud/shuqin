@@ -1,7 +1,0 @@
-(function($){
-	'use script';
-
-
-
-
-}(jQuery));
