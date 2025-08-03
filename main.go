@@ -51,6 +51,13 @@ func main() {
 	r.GET("/customer", handler.Customer)
 	r.GET("/solutions", handler.Solutions)
 
+	// 设置 404 页面
+	r.NoRoute(func(c *gin.Context) {
+		c.HTML(404, "404.html", gin.H{
+			"title": "页面未找到",
+		})
+	})
+
 	// 监听并在 0.0.0.0:8080 上启动服务
 	err = r.Run(":8082")
 	if err != nil {
