@@ -8,6 +8,7 @@ import (
 	"shuqin.cc/handler"
 )
 
+// 生成静态文件资源
 func staticFuncGenerator(base string) func(string) string {
 	return func(path string) string {
 		fmt.Println(path)
@@ -38,8 +39,9 @@ func main() {
 	var err error
 	r := gin.Default()
 
+	// 加载静态模板资源
 	tmpl := template.Must(LoadTemplates())
-
+	// 加载静态模板
 	r.SetHTMLTemplate(tmpl)
 
 	r.GET("/", handler.Home)
