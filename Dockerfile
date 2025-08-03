@@ -1,5 +1,8 @@
 # 第一阶段：构建阶段（多阶段构建）
 FROM golang:1.22-alpine AS builder
+# 修改境像源
+ENV GO111MODULE=on \
+    GOPROXY=https://goproxy.cn,direct
 
 # 设置工作目录
 WORKDIR /app
